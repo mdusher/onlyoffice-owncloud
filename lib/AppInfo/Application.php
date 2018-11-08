@@ -76,10 +76,10 @@ class Application extends App {
 
         Util::connectHook("OCP\Share", "share_link_access", Hookhandler::class, "PublicPage");
 
-        require_once __DIR__ . "/../3rdparty/jwt/BeforeValidException.php";
-        require_once __DIR__ . "/../3rdparty/jwt/ExpiredException.php";
-        require_once __DIR__ . "/../3rdparty/jwt/SignatureInvalidException.php";
-        require_once __DIR__ . "/../3rdparty/jwt/JWT.php";
+        require_once __DIR__ . "/../../3rdparty/jwt/BeforeValidException.php";
+        require_once __DIR__ . "/../../3rdparty/jwt/ExpiredException.php";
+        require_once __DIR__ . "/../../3rdparty/jwt/SignatureInvalidException.php";
+        require_once __DIR__ . "/../../3rdparty/jwt/JWT.php";
 
         $container = $this->getContainer();
 
