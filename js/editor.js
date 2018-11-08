@@ -37,7 +37,11 @@
 
     OCA.Onlyoffice.InitEditor = function () {
         var displayError = function (error) {
-            $("#iframeEditor").text(error).addClass("error");
+            $("<div id='errorContent'></div>").appendTo("#app");
+            $("<div id='errorMessage'></div>").appendTo("#errorContent");
+            $("<img></img>").attr('src', OC.imagePath('onlyoffice', 'app')).appendTo("#errorMessage");
+            $("<p></p>").text("An error occurred:").appendTo("#errorMessage");
+            $("<p></p>").text(error).appendTo("#errorMessage");
         };
 
         var fileId = $("#iframeEditor").data("id");

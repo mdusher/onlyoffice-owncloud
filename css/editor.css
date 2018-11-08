@@ -34,3 +34,35 @@
 #iframeEditor.error {
     color: red;
 }
+
+#errorContent {
+    width: 50rem;
+    text-align: center;
+    margin: auto;
+}
+
+#errorContent img {
+    display: block;
+    width: 14rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3rem;
+}
+
+#errorContent p {
+    text-align: center;
+    color: #fff;
+}
+
+#errorMessage {
+   display: inline-block;
+   margin-top: 170px;
+   background: #616161;
+   padding: 1rem;
+   border-radius: 5px;
+}
+
+.app-onlyoffice {
+    background: #F4F4F4;
+}
+
